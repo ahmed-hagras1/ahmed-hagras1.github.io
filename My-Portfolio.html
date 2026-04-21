@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Khaled Hagras | Software Developer</title>
+    <style>
+        /* Base Styles - Dark Professional Theme */
+        :root {
+            --primary-color: #ffffff; /* Crisp white for headings */
+            --secondary-color: #38bdf8; /* Modern, bright blue for accents/links */
+            --text-color: #cbd5e1; /* Soft light gray for easy reading */
+            --bg-color: #0f172a; /* Deep dark slate for the very back */
+            --container-bg: #1e293b; /* Slightly lighter slate for the main container */
+            --border-radius: 8px;
+            --border-color: #334155; /* Subtle border color */
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+        }
+
+        /* Typography & Headings */
+        h1, h2, h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-top: 5px;
+            color: #94a3b8; /* Muted blue-gray */
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-top: 20px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        /* Profile Image Style */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Makes it a circle */
+            object-fit: cover; /* Ensures the image doesn't stretch */
+            border: 3px solid var(--secondary-color);
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .contact-info {
+            margin-top: 15px;
+            font-size: 1.1rem;
+        }
+
+        .contact-info a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 30px;
+        }
+
+        /* Project Styles */
+        .project {
+            margin-bottom: 35px;
+            padding: 20px;
+            background-color: #0f172a; /* Darker background to pop against container */
+            border-left: 4px solid var(--secondary-color);
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Project Title Link Styling */
+        .project-title-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .project-title-link:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+
+        /* Project Image Style */
+        .project-img {
+            max-width: 100%;
+            height: auto;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        
+        /* Optional image hover effect for links */
+        a .project-img:hover {
+            opacity: 0.8;
+        }
+
+        .project-meta {
+            font-style: italic;
+            color: #94a3b8;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="profile.jpg" alt="Ahmed Khaled Hagras" class="profile-img">
+            
+            <h1>Ahmed Khaled Hagras</h1>
+            <h2>Software Developer | Founder of Hadras Tech</h2>
+            <div class="contact-info">
+                Tanta, Egypt | <a href="mailto:ahmedhagras.net@gmail.com">ahmedhagras.net@gmail.com</a><br>
+                <a href="#" target="_blank">LinkedIn</a> | <a href="#" target="_blank">GitHub</a>
+            </div>
+        </header>
+
+        <main>
+            <section id="about">
+                <h3>About Me</h3>
+                <p>I am a Software Developer proficient in C#, C++, and SQL. I specialize in engineering comprehensive desktop solutions and scalable backend web applications using ASP.NET Core, Clean Architecture, and modern RESTful APIs. As the Founder and Lead Developer of Hadras Tech, I focus on building secure, high-performance systems tailored for professional environments like clinics and law firms, ensuring seamless data management and operational efficiency.</p>
+            </section>
+
+            <section id="skills">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li><strong>Programming Languages:</strong> C++, C#</li>
+                    <li><strong>Architecture & Design:</strong> Clean Architecture, 3-Tier Architecture, Object-Oriented Programming (OOP), Data Structures & Algorithms</li>
+                    <li><strong>Web Development:</strong> ASP.NET Core MVC, ASP.NET Core Web API, HTML5</li>
+                    <li><strong>Desktop Development:</strong> WinForms, ADO.NET</li>
+                    <li><strong>Database Management:</strong> Microsoft SQL Server, Transact-SQL (T-SQL), Entity Framework Core, LINQ</li>
+                </ul>
+            </section>
+
+            <section id="experience">
+                <h3>Projects & Professional Experience</h3>
+
+                <div class="project">
+                    <h4><a href="https://www.facebook.com/share/1Aymxm9d6e/" target="_blank" class="project-title-link">Hadras Tech Solutions</a></h4>
+                    <div class="project-meta">Lead Developer & Founder</div>
+                    
+                    <a href="https://www.facebook.com/share/1Aymxm9d6e/" target="_blank">
+                        <img src="hadras.jpg" alt="Hadras Tech Solutions" class="project-img" style="max-height: 400px; width: 100%; object-fit: cover; object-position: center;" onerror="this.style.display='none'">
+                    </a>
+                    
+                    <ul>
+                        <li>Directing the development of professional desktop applications designed specifically for legal and medical practices.</li>
+                        <li>Engineering robust backend architectures prioritizing data integrity and security, utilizing centralized databases without compromising performance.</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <h4>Law Firm Management System</h4>
+                    <div class="project-meta">C#, WinForms, SQL Server | <a href="#">Video/Guide</a></div>
+                    <img src="lawfirm.jpg" alt="Law Firm Management System" class="project-img" style="max-height: 500px; width: 100%; object-fit: cover; object-position: center;" onerror="this.style.display='none'">
+                    <ul>
+                        <li>Engineered a comprehensive desktop application tailored for legal professionals to streamline operations and securely manage clients, cases, sessions, lawyers, files, invoices, and payments.</li>
+                        <li>Optimized UI performance and data retrieval by implementing pagination and advanced search filters.</li>
+                        <li>Architected a robust database using SQL transactions, stored procedures, functions, and views for optimal data integrity.</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <h4>School Project API</h4>
+                    <div class="project-meta">ASP.NET Core, Clean Architecture | <a href="#">GitHub Repository</a></div>
+                    <img src="school.jpg" alt="School Project API" class="project-img" style="max-height: 600px; width: 100%; object-fit: cover; object-position: center;" onerror="this.style.display='none'">
+                    <ul>
+                        <li>Developed a robust backend RESTful API built entirely on Clean Architecture principles.</li>
+                        <li>Implemented secure JWT authentication and authorization logic to seamlessly manage different user roles, including students and instructors.</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <h4>DVLD License Management System</h4>
+                    <div class="project-meta">C# WinForms, SQL Server, ADO.NET | <a href="#">GitHub Repository</a></div>
+                    <img src="dvld.jpg" alt="DVLD License Management System" class="project-img" style="max-height: 500px; width: 100%; object-fit: cover; object-position: center;" onerror="this.style.display='none'">
+                    <ul>
+                        <li>Built a desktop application to manage vehicle licenses.</li>
+                        <li>Implemented full CRUD operations, search, and reporting features.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="education">
+                <h3>Education</h3>
+                <p><strong>Tanta University</strong> | Tanta, Egypt</p>
+                <p>Bachelor of Computer Science and Information Technology<br>
+                <em>Sep 2023 - May 2027</em></p>
+            </section>
+
+            <section id="languages">
+                <h3>Languages</h3>
+                <ul>
+                    <li><strong>Arabic:</strong> Native</li>
+                    <li><strong>English:</strong> Professional Working Proficiency</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
